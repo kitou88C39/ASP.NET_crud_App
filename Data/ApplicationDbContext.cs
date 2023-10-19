@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace Aspnet_traning.Data
 {
-    public class Aspnet_traning
+    public class ApplicationDbContext:DbContext
     {
-        
+
+public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options)
+: base(options){
+    
+}
+
     }
 }
